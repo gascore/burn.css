@@ -49,12 +49,13 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .8rem;
     color: var(--color-darkGrey);
 }
 
 .nav .active:not(.button) {
-    color: #000; /* fallback */
+    color: #000;
+    /* fallback */
     color: var(--color-primary);
 }
 
