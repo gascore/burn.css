@@ -87,8 +87,8 @@ html.color-theme-in-transition,
 html.color-theme-in-transition *,
 html.color-theme-in-transition *:before,
 html.color-theme-in-transition *:after {
-    -webkit-transition: all 5s !important;
-    transition: all 5s !important;
+    -webkit-transition: all .75s !important;
+    transition: all .75s !important;
     -webkit-transition-delay: 0 !important;
             transition-delay: 0 !important;
 }

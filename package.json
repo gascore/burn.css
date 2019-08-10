@@ -1,48 +1,48 @@
 {
-  "name": "chota",
-  "version": "0.6.2",
-  "description": "A really small CSS framework",
-  "main": "dist/chota.min.css",
-  "scripts": {
-    "start": "run-p browser-sync watch",
-    "browser-sync": "browser-sync start --server --directory --files '**/*.css' '**/*.html'",
-    "build": "rimraf dist/* && yarn postcss &&  cross-env NODE_ENV=production yarn postcss --ext .min.css && gzip -c dist/chota.min.css  | wc -c",
-    "postcss": "postcss ./src/chota.css -d dist/",
-    "watch": "cross-env NODE_ENV=development yarn postcss -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "css",
-    "minimal",
-    "web"
-  ],
-  "author": "Jenil Gogari",
-  "license": "MIT",
-  "homepage": "https://jenil.github.io/chota",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jenil/chota.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jenil/chota/issues"
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.5.0",
-    "browser-sync": "^2.26.3",
-    "cross-env": "^5.2.0",
-    "cssnano": "^4.1.7",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.0.1",
-    "postcss-csso": "^3.0.0",
-    "postcss-import": "^12.0.1",
-    "postcss-mixins": "^6.2.2",
-    "postcss-nesting": "^7.0.1",
-    "postcss-simple-vars": "^5.0.2",
-    "rimraf": "^2.6.3"
-  },
-  "files": [
-    "src/",
-    "dist/",
-    "README.md"
-  ]
+    "name": "burn.css",
+    "version": "0.7",
+    "description": "A really small CSS framework",
+    "main": "dist/burn.min.css",
+    "scripts": {
+        "start": "run-p browser-sync watch",
+        "browser-sync": "browser-sync start --server --directory --files '**/*.css' '**/*.html'",
+        "build": "rimraf dist/* && yarn postcss &&  cross-env NODE_ENV=production yarn postcss --ext .min.css && gzip -c dist/burn.min.css  | wc -c",
+        "postcss": "postcss ./src/burn.css -d dist/",
+        "watch": "cross-env NODE_ENV=development yarn postcss -w",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "css",
+        "minimal",
+        "web"
+    ],
+    "author": "Noskov Artem",
+    "license": "MIT",
+    "homepage": "https://githib.com/gascore/burn.css",
+    "repository": {
+        "type": "git",
+        "url": "git+https://githib.com/gascore/burn.css.git"
+    },
+    "bugs": {
+        "url": "https://githib.com/gascore/burn.css/issues"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.5.0",
+        "browser-sync": "^2.26.3",
+        "cross-env": "^5.2.0",
+        "cssnano": "^4.1.7",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^6.0.1",
+        "postcss-csso": "^3.0.0",
+        "postcss-import": "^12.0.1",
+        "postcss-mixins": "^6.2.2",
+        "postcss-nesting": "^7.0.1",
+        "postcss-simple-vars": "^5.0.2",
+        "rimraf": "^2.6.3"
+    },
+    "files": [
+        "src/",
+        "dist/",
+        "README.md"
+    ]
 }
