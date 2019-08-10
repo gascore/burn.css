@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/gascore/burn.css/master/docs/logo.svg" />
+<img src="https://raw.githubusercontent.com/gascore/burn.css/master/docs/logo.png" />
 <br><br>
 A really small CSS framework
 <br><br>
