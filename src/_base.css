@@ -2,14 +2,13 @@ html,
 html[data-theme='light'] {
     --color-primary: #388ffe;
     --color-second-primary: #6F7CE7;
-    --color-lightGrey: #d2d6dd;
+    --color-lightGrey: #e2e5eb;
     --color-grey: #7e818b;
     --color-darkGrey: #3f4144;
     --color-error: #B6134C;
     --color-success: #00E7BD;
     --main-bg: #fff;
     --main-color: rgb(59, 67, 81);
-    --gray-bg: #f3f3f6;
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
     --font-size: 1.6rem;
@@ -110,9 +109,9 @@ p {
 }
 
 blockquote {
-    background-color: var(--gray-bg);
+    background-color: var(--color-lightGrey);
     padding: 1.5rem 2rem;
-    border-left: 3px solid var(--color-lightGrey);
+    border-left: 3px solid var(--color-grey);
 }
 
 dl dt {
@@ -135,7 +134,7 @@ table {
 }
 
 table.striped tr:nth-of-type(2n) {
-    background-color: var(--gray-bg);
+    background-color: var(--color-lightGrey);
 }
 
 td,
@@ -168,11 +167,11 @@ kbd {
     border-radius: 4px;
     color: #d43939;
     padding: 0.2em 0.4em;
-    background-color: var(--gray-bg);
+    background-color: var(--color-lightGrey);
 }
 
 pre {
-    background-color: var(--gray-bg);
+    background-color: var(--color-lightGrey);
     font-size: 1em;
     padding: 1rem;
     overflow-x: auto;

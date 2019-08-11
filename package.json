@@ -1,6 +1,6 @@
 {
     "name": "burn.css",
-    "version": "0.7",
+    "version": "0.7.0",
     "description": "A really small CSS framework",
     "main": "dist/burn.min.css",
     "scripts": {
@@ -18,13 +18,13 @@
     ],
     "author": "Noskov Artem",
     "license": "MIT",
-    "homepage": "https://githib.com/gascore/burn.css",
+    "homepage": "https://github.com/gascore/burn.css",
     "repository": {
         "type": "git",
-        "url": "git+https://githib.com/gascore/burn.css.git"
+        "url": "git+https://github.com/gascore/burn.css.git"
     },
     "bugs": {
-        "url": "https://githib.com/gascore/burn.css/issues"
+        "url": "https://github.com/gascore/burn.css/issues"
     },
     "devDependencies": {
         "autoprefixer": "^9.5.0",

@@ -16,7 +16,7 @@ textarea {
 .form-input {
     font-family: inherit;
     padding: 0.8rem 1rem;
-    border-radius: 4px;
+    border-radius: .5rem;
     border: 1px solid var(--color-lightGrey);
     font-size: 1em;
     transition: all 0.2s ease;
@@ -42,18 +42,22 @@ textarea {
     border-color: var(--color-success);
 }
 
-select.form-input {
-    -webkit-appearance: none;
-    background: var(--gray-bg) no-repeat 100%;
-    background-size: 1ex;
-    background-origin: content-box;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='40' fill='%23555'><polygon points='0,0 60,0 30,40'/></svg>");
-}
-
 [type="checkbox"].form-input,
 [type="radio"].form-input {
     width: 1.6rem;
     height: 1.6rem;
+}
+
+select.form-input {
+    appearance: none;
+    color: inherit;
+    outline: 0;
+    vertical-align: middle;
+}
+
+select.form-input:not([multiple]):not([size]) {
+    background: var(--color-lightGre) url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .4rem center/.8rem 1rem;
+    padding-right: 1.2rem;
 }
 
 label.form-switch {
