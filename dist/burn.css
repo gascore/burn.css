@@ -72,6 +72,9 @@ html[data-theme='light'] {
     --grid-gutter: 2rem;
     --font-size: 1.6rem;
     --font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --boxShadowBorder: none;
+    --boxShadowColor: rgba(125, 128, 147, 0.23);
+    --boxShadowColorHover: rgba(125, 128, 147, 0.46);
 }
 
 html[data-theme='dark'] {
@@ -80,6 +83,9 @@ html[data-theme='dark'] {
     --color-darkGrey: #d2d6dd;
     --color-lightGrey: #3f4144;
     --color-grey: #888888;
+    --boxShadowBorder: rgb(103, 103, 107);
+    --boxShadowColor: none;
+    --boxShadowColorHover: none;
 }
 
 html.color-theme-in-transition,
@@ -998,18 +1004,19 @@ button:disabled:hover {
 
 .card {
     padding: 1rem 2rem;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--boxShadowBorder);
+    border-radius: 1rem;
+    -webkit-box-shadow: var(--boxShadowColor) 0px 3px 11px 0px;
+            box-shadow: var(--boxShadowColor) 0px 3px 11px 0px;
 }
 
 .card p:last-child {
-  margin: 0;
+    margin: 0;
 }
 
-.card header > * {
-  margin-top: 0;
-  margin-bottom: 1rem;
+.card header>* {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .tabs {
@@ -1018,11 +1025,14 @@ button:disabled:hover {
     display: flex;
 }
 
-.tabs a {
+.tabs a,
+.tabs a:hover,
+.tags a:focus,
+.tagas a:focus-within {
     text-decoration: none;
 }
 
-.tabs > a {
+.tabs>a {
     padding: 1rem 2rem;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -1032,13 +1042,13 @@ button:disabled:hover {
     text-align: center;
 }
 
-.tabs > a.active,
-.tabs > a:hover {
+.tabs>a.active,
+.tabs>a:hover {
     opacity: 1;
     border-bottom: 2px solid var(--color-darkGrey);
 }
 
-.tabs > a.active {
+.tabs>a.active {
     border-color: var(--color-primary);
 }
 
