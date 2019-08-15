@@ -172,6 +172,10 @@ a:visited {
     color: var(--color-second-primary);
 }
 
+a.text {
+    color: inherit;
+}
+
 p {
     margin-top: 0;
 }
