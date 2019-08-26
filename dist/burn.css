@@ -1,64 +1,6 @@
 /*! burn.css v0.7.1 | MIT License | github.com/gascore/burn.css */
 
-.d-block {
-    display: block;
-}
-
-.d-inline {
-    display: inline;
-}
-
-.d-inline-block {
-    display: inline-block;
-}
-
-.d-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.d-inline-flex {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-}
-
-.d-none,
-.d-hide {
-    display: none !important;
-}
-
-.d-visible {
-    visibility: visible;
-}
-
-.d-invisible {
-    visibility: hidden;
-}
-
-.text-hide {
-    background: transparent;
-    border: 0;
-    color: transparent;
-    font-size: 0;
-    line-height: 0;
-    text-shadow: none;
-}
-
-.text-assistive {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-html,
-html[data-theme='light'] {
+:root {
     --color-primary: #388ffe;
     --color-second-primary: #6F7CE7;
     --color-lightGrey: #e2e5eb;
@@ -647,7 +589,7 @@ select.form-input {
 }
 
 select.form-input:not([multiple]):not([size]) {
-    background: var(--color-lightGre) url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .4rem center/.8rem 1rem;
+    background: var(--color-lightGrey) url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .4rem center/.8rem 1rem;
     padding-right: 1.2rem;
 }
 
@@ -1084,6 +1026,63 @@ button:disabled:hover {
 
 .tag+.tag {
   margin-left: 1rem;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.d-inline-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.d-none,
+.d-hide {
+    display: none !important;
+}
+
+.d-visible {
+    visibility: visible;
+}
+
+.d-invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    background: transparent;
+    border: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    text-shadow: none;
+}
+
+.text-assistive {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /* Colors */

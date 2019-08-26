@@ -1,6 +1,5 @@
 /*! burn.css v0.7.1 | MIT License | github.com/gascore/burn.css */
 
-@import "_display.css";
 @import "_base.css";
 @import "_grid.css";
 @import "_form.css";
@@ -8,4 +7,5 @@
 @import "_card.css";
 @import "_tab.css";
 @import "_tag.css";
+@import "_display.css";
 @import "_util.css";
