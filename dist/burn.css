@@ -897,21 +897,17 @@ button:disabled:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .nav,
-    .nav>.container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+    .nav {
+        overflow-y: auto;
     }
-    .nav-center,
-    .nav-left,
+    .nav-left {
+        margin-right: .4em;
+    }
     .nav-right {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        margin-left: .4em;
+    }
+    .nav-center {
+        margin: 0 .4em;
     }
 }
 

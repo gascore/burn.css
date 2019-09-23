@@ -32,15 +32,17 @@
 }
 
 @media screen and (max-width: 480px) {
-    .nav,
-    .nav>.container {
-        flex-direction: column;
+    .nav {
+        overflow-y: auto;
     }
-    .nav-center,
-    .nav-left,
+    .nav-left {
+        margin-right: .4em;
+    }
     .nav-right {
-        flex-wrap: wrap;
-        justify-content: center;
+        margin-left: .4em;
+    }
+    .nav-center {
+        margin: 0 .4em;
     }
 }
 
